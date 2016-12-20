@@ -22,10 +22,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
+        <module name="hibernate" />
         <module name="weixin" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="hibernate" target="1.8" />
       <module name="weixin" target="1.8" />
     </bytecodeTargetLevel>
   </component>
