@@ -79,4 +79,12 @@
       age = #{age,jdbcType=INTEGER}
     where id = #{id,jdbcType=INTEGER}
   </update>
+
+  <!--   华丽的分割线，以上代码为自动生成        -->
+  <insert id="insertAndGetId" useGeneratedKeys="true" keyProperty="id" parameterType="com.roden.mybatis.pojo.User" >
+    insert into user_t (id, user_name, password,
+    age)
+    values (#{id,jdbcType=INTEGER}, #{userName,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR},
+    #{age,jdbcType=INTEGER})
+  </insert>
 </mapper>
