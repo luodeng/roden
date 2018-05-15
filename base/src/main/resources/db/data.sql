@@ -1,0 +1,3 @@
+insert into user (id, user_id, user_name,birth_day,now,create_time) values(1,'1','roden','1991-04-23','15:03:01','2018-05-11 15:03:02');
+insert into user (id, user_id, user_name,birth_day,now,create_time) values(2,'2','mike','1996-02-23','15:03:01','2018-05-11 15:03:02');
+insert into user (id, user_id, user_name,birth_day,now,create_time) values(3,'3','tom','1994-03-23','15:03:01','2018-05-11 15:03:02');
