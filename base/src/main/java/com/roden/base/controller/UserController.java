@@ -41,10 +41,11 @@ public class UserController {
     }
 
     @RequestMapping("/saveUser")
-    int saveUser(){
+    int saveUser(UserDO userDO){
         log.info("save method");
-        UserDO userDO=new UserDO();
-        userDO.setUserId(UUID.randomUUID().toString());
+        log.info("userDO:"+userDO);
+        userDO=new UserDO();
+        userDO.setUserId(UUID.randomUUID().toString().replace("-",""));
         userDO.setUserName("roden");
         userDO.setBirthDay(LocalDate.of(1991,4,23));
         userDO.setNow(LocalTime.now());

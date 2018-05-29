@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.roden.base.demo.dao.DateTimeDAO" >
+
+    <select id="listAll" resultType="com.roden.base.demo.domain.DateTimeDO" >
+        select * from date_time
+    </select>
+    <insert id="insertDateTime" >
+        insert into date_time (id, local_date, local_time, local_date_time,create_date)  VALUES
+            (
+            #{id},#{localDate}, #{localTime}, #{localDateTime},#{createDate}
+           )
+    </insert>
+</mapper>
